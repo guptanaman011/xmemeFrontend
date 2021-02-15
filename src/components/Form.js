@@ -92,7 +92,7 @@ export class Form extends Component{
 
       if (isValid){
       console.log(this.state)
-      axios.post('http://127.0.0.1:8000/memes/', this.state)
+      axios.post('https://xmeme-naman.herokuapp.com/memes/', this.state)
         .then(response =>{
             console.log(response)
             window.location.reload();
